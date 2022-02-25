@@ -6,5 +6,5 @@ plot(df$datetime, as.numeric(df$Sub_metering_1), type="n", xlab="", ylab="Energy
 lines(df$datetime, as.numeric(df$Sub_metering_1))
 lines(df$datetime, as.numeric(df$Sub_metering_2), col="red")
 lines(df$datetime, as.numeric(df$Sub_metering_3), col="blue")
-legend("topright", legend=c("Sub_metering1", "Sub_metering2", "Sub_metering3"), col=c("black", "red", "blue"), lty=1)
+legend("topright", legend=c("Sub_metering1", "Sub_metering2", "Sub_metering3"), col=c("black", "red", "blue"), lty=1, bty="n")
 dev.off()
